@@ -1,0 +1,98 @@
+/* Basic form styling */
+.farmer-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.farmer-form:hover {
+  background-color: hsl(200, 100%, 90%);
+}
+
+/* Form column layout for responsiveness */
+.form-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 10px;
+}
+
+/* Label styling */
+.farmer-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: hsl(210, 80%, 30%);
+}
+
+/* Input and select styles */
+.farmer-form input[type="text"],
+.farmer-form input[type="email"],
+.farmer-form input[type="date"],
+.farmer-form textarea,
+.farmer-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid hsl(210, 50%, 80%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: hsl(210, 100%, 98%);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.farmer-form input:focus,
+.farmer-form textarea:focus,
+.farmer-form select:focus {
+  outline: none;
+  border-color: hsl(210, 100%, 60%);
+  box-shadow: 0px 0px 8px hsl(210, 100%, 80%);
+}
+
+/* Checkbox styling */
+.farmer-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* File input styling */
+.farmer-form input[type="file"] {
+  margin-top: 5px;
+}
+
+/* Button styling */
+.submit-button {
+  background-color: hsl(120, 100%, 40%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: hsl(120, 100%, 35%);
+  box-shadow: 0px 8px 20px rgba(0, 150, 50, 0.3);
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .farmer-form {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .form-column {
+    max-width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+  }
+}

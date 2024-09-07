@@ -1,0 +1,38 @@
+/* styles.css */
+/* Other existing styles */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling for small screens */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid hsl(210, 50%, 80%); /* Light border color */
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: hsl(210, 50%, 60%); /* Header background color */
+  color: white; /* Header text color */
+}
+
+.table tr:nth-child(even) {
+  background-color: hsl(210, 50%, 95%); /* Light background for even rows */
+}
+
+.table tr:hover {
+  background-color: hsl(210, 50%, 80%); /* Highlight on hover */
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: hsl(0, 50%, 50%); /* Color for no data message */
+}

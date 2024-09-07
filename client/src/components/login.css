@@ -1,0 +1,40 @@
+.registration-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.l-h2 {
+  text-align: center;
+}
+.lform-group {
+  margin-bottom: 15px;
+}
+
+.llabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.linput {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.lbutton {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lbutton:hover {
+  background-color: #0056b3;
+}
