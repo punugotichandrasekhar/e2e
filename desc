@@ -1,0 +1,16 @@
+create client folder
+for client:
+-----------
+npm init vite
+npm install bootstrap axios react-router-dom
+got to new powershell
+e2e path:
+--------
+ npm init -y
+create a server folder
+for backend:
+------------
+npm init -y
+npm install express mongoose cors nodemon
+create index.js file in server folder
+"start":"nodemon index.js" in "scripts"
